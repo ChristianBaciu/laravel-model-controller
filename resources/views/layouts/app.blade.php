@@ -8,11 +8,10 @@
     @vite('resources/js/app.js')
 </head>
 <body>
+    {{-- welcome.blade --}}
+    @yield('Database')
+
     {{-- header --}}
-    @include('partials.header')
-    {{-- main --}}
-    @include('partials.main')
-    {{-- footer --}}
-    @include('partials.footer')
+    {{-- @include('partials.header') --}}
 </body>
 </html>
