@@ -3,8 +3,16 @@
 
 {{-- imposta il titolo della pagina ( @yield('title') ) --}}
 @section('title', 'Inizio pagina')
-
-@section('@section')
-<main>
-    <h1>Finalmente</h1>
-</main>
+<header>
+    <div class="container" style="width: 400px;">
+        @foreach ($movie as $element)
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $element['title'] }}</h5>
+                    <p class="card-text">{{ $element['original_title'] }}</p>
+                </div>
+            </div>
+        @endforeach
+    </div>
+    {{-- {{ dd($movie) }} --}}
+</header>

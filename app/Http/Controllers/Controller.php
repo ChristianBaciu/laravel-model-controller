@@ -8,8 +8,5 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
-    public function index(){
-        return view('welcome');
-    }
-    // use AuthorizesRequests, ValidatesRequests;
+    use AuthorizesRequests, ValidatesRequests;
 }
